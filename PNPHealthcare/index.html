@@ -63,16 +63,20 @@
     footer .wrap { padding:19px 0 }
     @media (max-width:600px) {
       .wrap { width:calc(100% - 28px) }
-      .topbar .wrap { min-height:58px }
-      .pnp-mark { width:120px }
-      main { padding-top:26px; padding-bottom:32px }
-      .intro { padding-bottom:17px; margin-bottom:19px }
-      .intro p { margin-top:8px }
-      .team-card { grid-template-columns:1fr }
-      .team-copy { padding:19px 16px 15px }
-      .team-card figure { padding:0 10px 10px }
-      .description { max-width:none; font-size:15px }
-      .open-issue { margin-top:13px }
+      .topbar .wrap { min-height:50px }
+      .pnp-mark { width:110px }
+      main { padding-top:20px; padding-bottom:24px }
+      h1 { font-size:clamp(30px,8.2vw,38px) }
+      h2 { font-size:17px; margin-bottom:9px }
+      h3 { font-size:clamp(21px,6vw,28px); margin:4px 0 6px }
+      .intro { padding-bottom:12px; margin-bottom:13px }
+      .intro p { margin-top:5px }
+      .team-card { grid-template-columns:minmax(0,1fr) clamp(90px,32%,150px) }
+      .team-copy { padding:13px 9px 13px 13px }
+      .team-card figure { padding:8px 9px 8px 0 }
+      .description { max-width:none; font-size:15px; line-height:1.5 }
+      .open-issue { font-size:14px; margin-top:9px }
+      footer .wrap { padding-block:12px }
     }
   </style>
 </head>
